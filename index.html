@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Advanced Webpage</h1>
+        <nav>
+            <a href="#quiz" class="nav-btn">Quiz</a>
+            <a href="#carousel" class="nav-btn">Image Carousel</a>
+            <a href="#api-data" class="nav-btn">Jokes</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Quiz Section -->
+        <section id="quiz">
+            <h2>Interactive Quiz</h2>
+            <div id="quiz-container">
+                <p id="question"></p>
+                <div id="options"></div>
+                <button id="next-btn" class="btn">Next</button>
+                <div id="loading-spinner" class="spinner hidden"></div>
+                <p id="feedback"></p>
+            </div>
+        </section>
+
+        <!-- Image Carousel Section -->
+        <section id="carousel">
+            <h2>Image Carousel</h2>
+            <div class="carousel">
+                <button class="prev btn" onclick="changeSlide(-1)">&#10094;</button>
+                <div class="slides">
+                    <img src="img/image1.jpg" alt="Slide 1">
+                    <img src="img/image2.avif" alt="Slide 2">
+                    <img src="img/image3.jpg" alt="Slide 3">
+                </div>
+                <button class="next btn" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- API Integration Section -->
+        <section id="api-data">
+            <h2>Joke of the Moment</h2>
+            <div id="joke-container">
+                <p id="joke">Fetching a joke...</p>
+                <div id="spinner-joke" class="spinner hidden"></div>
+                <button id="new-joke-btn" class="btn">Get Another Joke</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sourajeet Sahoo </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
