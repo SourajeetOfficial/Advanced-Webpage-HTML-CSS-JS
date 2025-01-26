@@ -4,6 +4,11 @@ Welcome to the **Quiz & Carousel Web Application**! This is a fun and interactiv
 
 ---
 
+## Preview 📸
+![Project Preview](img/preview1.png) 
+![Project Preview](img/preview2.png)
+
+
 ## ✨ Features
 
 - **Quiz 🧠**:  
